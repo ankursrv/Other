@@ -1,0 +1,145 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+#main{
+    width: 450px;
+    min-height: 900px;
+    background-color: #EEEFF3;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.head-title{
+    font-size: 8px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    letter-spacing: 3px;
+}
+    
+#img-left-top{          /*is div me 2 section hai, img-leftside & img-rightside */
+    width: 450px;
+    height: 150px;
+    /* border: 1px solid blue; */
+    margin-bottom: 80px;
+    position: relative;
+}
+#img-leftside{
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid green; */
+    float: left;
+    position: relative;
+}
+.left-01{
+    position: absolute;
+    top: -45px;
+    left: 35px;
+    font-size: 80px;
+    color: white;
+    font-weight: 400;
+}
+.img-left-side{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -75px;
+}
+#img-rightside{
+    width: 298px;
+    height: 150px;
+    /* border: 1px solid yellow; */
+    float: right;
+}
+.img-left-head{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.img-left-para{
+    font-size: 10px;
+}
+/* image section right */
+#img-right{
+    width: 450px;
+    height: 150px;
+    /* border: 1px solid blue; */
+    margin-bottom: 80px;
+    position: relative;
+}
+#imgright-left02{
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid green; */
+    float: left;
+    position: relative;
+}
+.glasses{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    transform: translateX(-30px);
+}
+.glasses-discription{
+    font-size: 10px;
+    line-height: 15px;
+    transform: translateX(-30px);
+}
+#image-right02{
+    width: 298px;
+    height: 150px;
+    /* border: 1px solid yellow; */
+    float: right;
+    position: relative;
+}
+.right02{
+    position: absolute;
+    top: -45px;
+    right: 35px;
+    font-size: 80px;
+    color: white;
+    font-weight: 400;
+}
+.right02-para{
+    font-size: 10px;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.img-right-side02{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 220px;
+}
+
+ /* img right side me create 2 div one & two  */
+ .one{
+     width: 146px;
+     height: 150px;
+     /* border: 1px solid black; */
+     float: left;
+ }
+ .belts-description{
+     font-size: 10px;
+     line-height: 18px;
+ }
+ .two{
+    width: 146px;
+    height: 150px;
+    /* border: 1px solid red; */
+    float: right;
+}
+.bottom-rightpara{
+    padding-top: 60px;
+    padding-left: 20px;
+    line-height: 18px;
+}
+    
+
+    
+
