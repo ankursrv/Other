@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ /* Contaner  */
+ .contaner{
+     width: 1300px;
+     height: auto;
+     border: 1px solid red;
+     margin-left: 20px;
+ }
+ .mathfun h1{
+            font-size: 50px;
+            font-family: sans-serif;
+            color: rgb(151, 29, 151);
+            float: left;
+            margin-top: 60px;
+            margin-left: 50px;
+ }
+ .searchbox{
+     width: 500px;
+     height: 100px;
+     border: 1px solid red;
+     float: right;
+     background-color: rgb(188 227 105);
+     margin-top: 50px;
+     margin-right: 50px;
+ }
+.txt{
+    height: 25px;
+    width: 250px;
+    float: left;
+    display: block;
+    margin-left: 25px;
+    margin-top: 35px;
+    border: 2px solid yellowgreen;
+    }
+    .button{
+        height: 25px;
+        width: 110px;
+        background-color:rgb(175, 86, 175) ;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 35px;
+        border: none;
+        }
+        /* navigation menu */
+        .nav{
+            background-color: lightgreen;
+            margin-top: 170px;
+            margin-left: 50px;
+            margin-right: 50px;
+            overflow: auto;
+            height: 70px;
+            
+        }
+           
+         ul li{
+           list-style: none;
+           float: left;
+           /* padding: 30px; */
+           border-right: 2px solid blueviolet;
+           font-size: 18px;
+           padding: 5px 20px;
+           margin-top: 20px;
+           
+          
+       }
+       ul{
+           margin-left: 50px;
+       }
+       .nav ul li a{
+           text-decoration: none;
+           color: rgb(115, 46, 161);
+       }
+       
+       .nav ul li a:hover{
+           font-size: 20px;
+           transition: all ease .50s;
+           color: orange;
+           font-weight: bold;
+           font-family: sans-serif;
+       }
+       .nav ul li a:active{
+           color: white;
+       }
+      
+       /* help secction */
+       .help{
+           width: 1200px;
+           height: 300px;
+           background-image: linear-gradient(#F3F187,lightgreen);
+           margin: 10px 50px 0px 50px;
+          
+       }
+       /* h2 heading2 section */
+       h2{
+                color: rgb(25, 151, 25);
+                padding: 50px 0px 0px 30px;
+                font-family: Times new roman;
+                font-size: 40px;
+                
+       }
+       p{
+                color: rgb(25, 151, 25);
+                padding: 30px 30px 0px 30px;
+                font-family: Times new roman;
+                text-align: justify;
+                font-size: 25px;
+            }
+        /* Go To and Why Us section          */
+        .box{
+            width: 1200px;
+            height: 800px;
+            border: 1px solid red;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .box-col1{
+            width: 580px;
+            height: 800px;
+            border: 1px solid green;
+            float: left;
+            border-radius: 20px;
+        }
+        .box-col2{
+            width: 580px;
+            height: 600px;
+            border: 1px solid green;
+            float: right;
+            border-radius: 20px;
+        }
+        h3{
+            margin-left: 40px;
+            margin-top: 50px;
+            font-size: 25px;
+            color: rgb(128, 18, 128);
+        .item{
+                font-size: 50px;
+                
+            }
+        
