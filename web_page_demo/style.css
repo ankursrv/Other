@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    /* line-height: 24px; */
+}
+/* Custom CSS  */
+.mt-5{
+margin-top: 25px;
+}
+.mt-4, .mb-4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.mb-5{
+    margin-bottom: 25px;
+   
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.pt{
+    padding-top: 25px;
+}
+
+ h1, h2{
+     font-size: 3.5rem;
+     font-size: 2.5rem;
+}
+.text-center{
+    text-align: center;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+.border{
+    border: 1px solid red;
+}
+.ps,.pe{
+    padding-left:  35px;
+    padding-right: 35px;
+}
+.w{
+    width: 100%;
+}
+.h{
+    height: 100%;
+}
+
+
+
+
+    
+.cantainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #eaedf2, #eaedf3, #ebeef3, #ebeef4, #eceef4);
+    padding: 0px 5rem;
+}
+.navlist ul li , .navlist ul{
+    list-style: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: flex;
+    padding: 0px 20px;    
+}
+/* navbar End  */
+.banner{
+   width: 100%;
+    height: 80vh;
+    background: linear-gradient(transparent -20%, black 100%), url("images/hero.jpg") no-repeat center; 
+    background-size: cover; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+.banner h1{
+    width: 80%;
+    color: white;
+    text-align: center;
+    
+}
+.banner p{
+    text-align: center;
+    width: 50%;
+    color: white;
+    line-height: 24px;
+}
+.banner_btn_one{
+    border: 2px solid white;
+    padding: 10px 50px;
+    border-radius: 20px 0 20px 0px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.mask-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: -1;
+}
+/* card Section start  */
+.card_section{
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    gap: 15px;
+    margin-top: -75px;
+    position: relative;
+    
+}
+
+.card{
+    width: 400px;
+    min-height: 475px;
+    background-color: rgb(127, 255, 212, 0.5);
+    border-radius: 10px 10px 0px 0px;
+}
+.card_body p{
+    font-size: 1.2rem;
+}
+.card_picture img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.card_text{
+    padding: 0px 25px;
+}
+ .card_btn{
+    background-color: rgb(46, 161, 214);
+    padding: 17px 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    margin-top: 50px;
+ }   
+
+/* Other section start  */
+.others{
+    display: flex;
+}
+.col_1 img{
+    object-fit: cover;
+}
+    
+.col_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.col_2 p{
+    font-size: 1.2rem;
+}
+.other h2{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive ness  */
+@media only screen and (max-width: 768px) {
+    .banner {
+      height: 50vh;
+    }
+    .banner h1{
+        width: 90%;
+    }
+    .banner p{
+        width: 80%;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .banner, .cantainer{
+        width: 100%;
+    }
+        
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner_logo{
+        display: none;
+    }
+    .navlist ul{
+        padding: 20px 0;
+    }
+    .other{
+       display: flex;
+       flex-direction: column;
+       
+    }
+    .col_1{
+        width: 100%;
+    }
+}
+
+        
