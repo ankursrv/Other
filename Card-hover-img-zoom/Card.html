@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>card_img_zood_on_hover</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- fontawasome -->
+  <script src="https://kit.fontawesome.com/feb5c435a0.js" crossorigin="anonymous"></script>
+
+    <!-- Internal style css -->
+
+    <style>
+  :root {
+        --text-primary-color: #283269;
+        --text-secondary-color: #EE0279;
+        --text-third-color: #9e006e;
+    
+        --primary-font: 'Source Sans Pro', sans-serif;
+    
+        --btn-one-color: #97BB00;
+        --btn-two-color: #38B5AB;
+        --btn-three-color: #EE0279;
+        --btn-four-color: #283269;
+    
+        --card-one-color: #FBFFE8;
+        --card-two-color: #D3FFFC;
+        --card-three-color: #FFE9E9;
+        --card-four-color: #E3E8FF;
+    
+    }
+
+
+        body{
+            background-color: #EE0279;
+        }
+
+        .inner{
+            overflow: hidden;
+        }
+
+        .inner img:focus-visible {
+        outline: none;
+    }
+
+
+        .inner img:hover {
+            transform: scale(1.1);
+           overflow: hidden;
+         
+        }
+        /* .border-radius{
+            border-radius: 10px;
+            
+        } */
+       .inner img{
+        transition: all ease 0.5s;
+        border-start-start-radius: 7px;
+        border-start-end-radius: 7px;
+        width: 100%;
+       }
+
+       /* button class style ki css bani hai  */
+       .card .btn{
+    padding: 10px 40px 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background-color: var(--btn-one-color);
+    color: white;
+    border: transparent;
+    position: relative;
+}
+.card .btn-two{
+    background-color: var(--btn-two-color);
+}
+.card .btn-three{
+    background-color: var(--btn-three-color);
+}
+.card .btn-four{
+    background-color: var(--btn-four-color);
+}
+   .card i{
+    /* padding: 10px 50px 10px 0px; */
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}     
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-6 col-sm pb-4">
+                <div class="card shadow text-center border-radius mx-auto">
+                    <div class="inner">
+                    <img src="jpg/Element-4@2x.jpg" class="card-img-top" alt="...">    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn">ome<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+                    
+
+            <div class="col-lg-3 col-md-6 col-sm pb-4">
+                <div class="card shadow text-center mx-auto border-radius">
+                    <div class="inner">
+                    <img src="jpg/Element-5@2x.jpg" class="card-img-top" alt="...">    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-two">somewhere<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+                    
+
+            <div class="col-lg-3 col-md-6 col-sm pb-4">
+                <div class="card shadow text-center mx-auto border-radius">
+                    <div class="inner">
+                    <img src="jpg/Element-6@2x.jpg" class="card-img-top" alt="...">    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-three">somewhere<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="col-lg-3 col-md-6 col-sm pb-4">
+                <div class="card shadow text-center mx-auto border-radius">
+                    <div class="inner">
+                    <img src="jpg/Element@2x.jpg" class="card-img-top" alt="...">      
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-four">somewhere<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
