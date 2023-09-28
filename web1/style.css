@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* container section */
+.container{
+    max-width: 1200px;
+    min-height: 1000px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+/* header section */
+.header{
+    height: 100px;
+    background-color: whitesmoke;
+}
+.header ul{
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+.header li{
+    margin-top: 30px;    
+    /* background-color: red; */
+    padding: 10px 20px;
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.header img{
+    width: 70px;
+    height: 70px;
+    margin-left: 150px;
+    margin-top: 12px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.header li:hover{
+    background-color: wheat;
+    transition: all ease 0.8s;
+    transform: scale(1.1);
+}
+.header1{
+    height: 500px;
+    /* border: 1px solid red; */
+    background-image: url(images/pexels-fauxels-3184454.jpg);
+    background-size: cover;
+}   
+/* transparant background image section */
+.transparant{
+   height: 500px;
+   background-color: rgba(122, 211, 163, 0.7);
+}  
+    
+    
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: sans-serif;
+    padding-top: 100px;
+   
+}
+.title{
+    width: 700px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:bold ;
+    margin-top: 10px;
+}
+    /* learn more button */
+.btn{
+    background-color: whitesmoke;
+    padding: 20px 35px;
+    width: 170px;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* ourproduct section */
+.ourproduct{
+    height: 400px;
+    /* border: 1px soild blue; */
+   
+}
+.our-purductheading{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+.services{
+    height: 350px;
+    width: 400px;
+    /* border: 1px solid purple; */
+    float: left;
+    box-sizing: border-box;
+}
+/* our product me services ko 3 section colomn me devide kiya    */
+
+.services img{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.seo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.seo-para{
+    text-align: justify;
+    padding: 25px 30px;
+    font-size: 18px;
+    word-spacing: 5px;
+    font-weight: bold;
+    
+}
+/* aboutus section */
+.aboutus{
+    height: 300px;
+    background-color: #e0e0e0;
+   
+}
+/* aboutus section me 2 div aboutus-1 and aboutus-2 */
+
+.aboutus-1{
+    width: 700px;
+    height: 300px;
+    float: left;
+}
+.aboutus-2{
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+.aboutus-2 img{
+    width: 300px;
+    height: 200px;
+    margin: 15px 100px;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.aboutus-1 p{
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px 150px;
+}
+/* slider section ko add nahi kiya hai */
+.searchbar{
+    height: 140px;
+    background-color:#00c853 ;
+}
+.inputbox-1{
+    height: 50px;
+    width: 350px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-left:  350px;
+    margin-top: 10px;
+}
+    
+#btn{
+    height: 52px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    color: #039be5;
+    width: 150px;
+    margin-left: 10px;
+   margin-top: 10px;
+}
+::placeholder{
+    color: white;
+}
+.details{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+}
+
+h4{
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 15px;
+}
+.details-1 p{
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px 50px;
+}
+.details-1 ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 20px 130px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.details-1 li a{
+    text-decoration: none;
+    color: black;
+}
+.details-1 a:hover{
+    color: red;
+}
+.cont{
+    transform: translateX(70px);
+    font-weight: bold;
+}
+.footar-bottom{
+    height: 50px;
+    background-color: black;
+}
+h5{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+    
+   
+    
+   
+    
+    
+    
+    
+    
+    
+
+   
+    
