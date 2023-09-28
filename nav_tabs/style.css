@@ -1,0 +1,39 @@
+.filt-img-box{
+    width: 420px;
+    height: 360px;
+    margin: 0 auto;
+}
+.filt-img-box img{
+    object-fit: cover;
+}
+.dron-link{
+    border: none;
+    background-color: unset;
+    color: rgba(236, 227, 227, 0.4);
+    position: relative;
+    padding: 0 0 8px 0;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.dron-link.active{
+    color: orange;
+}
+body{
+    background-color: black;
+}
+.dron-link::before, .dron-link.active::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+    transition: ease-in-out 0.5s;
+}
+.dron-link:hover::before, .dron-link.active::before{
+    width: 100%;
+    
+}
+    
