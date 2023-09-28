@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #m{
+           width: 200px;
+           height: 200px;
+           background-color: blue;
+           font-size: 50px;
+            line-height: 200px;
+           animation-name: mahakaal;
+           animation-duration: 2s;
+           
+           color: white;
+           animation-iteration-count: infinite;
+           animation-direction: alternate-reverse;
+           
+       }
+       @keyframes mahakaal
+       {
+           from{ 
+                transform: rotate(20 deg);
+                border-radius: 0px;
+                background-color: aqua;
+                color: green;
+           }
+           to{
+                transform: rotate(360 deg);
+                border-radius: 50%;
+                background-color: pink;
+                color: red;
+           }
+       }
+       #n{
+           width: 200px;
+           height: 200px;
+           background-color: rgb(161, 10, 149);
+           font-size: 50px;
+            line-height: 200px;
+           animation-name: n;
+           animation-duration: 2s;
+           color: white;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           
+       }
+       @keyframes n
+       {
+           from{ 
+                transform: rotate(0 deg);
+                border-radius: 0px;
+                background-color: aqua;
+                color: green;
+                height: 100px;
+                width: 100px;
+           }
+           to{
+                transform: rotate(360 deg);
+                border-radius: 0px;
+                background-color: pink;
+                color: red;
+                height: 300px;
+                width: 200px;
+           }
+       }
+       #o{
+           width: 200px;
+           height: 200px;
+           background-color: rgb(14, 209, 223);
+           font-size: 50px;
+            line-height: 200px;
+           animation-name: om;
+           animation-duration: 2s;
+           color: white;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           margin-left:200px ;
+           
+       }
+       @keyframes om
+       {
+           from{ 
+                transform: rotate(0 deg);
+                /* border-radius: 0px;
+                background-color: rgb(24, 10, 104);
+                color: green; */
+                
+           }
+           to{
+                transform: rotate(360 deg);
+                /* border-radius: 0px;
+                background-color: rgb(214, 66, 91);
+                color: red; */
+               
+           }
+       }
+
+       div{
+            height: 300px;
+            width: 300px;
+            background-color: navy;
+            color: white;
+            text-align: center;
+            line-height: 300px;
+            font-size: 40px;
+            margin: 200px auto;
+            border-radius: 5px;
+            animation-name: techpile;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+       }
+       @keyframes techpile
+       {
+           form{
+                transform: rotate(0 deg);
+                background-color: teal;
+           }
+           to{
+                transform: rotate(360 deg);
+                background-color: yellow;
+           }
+       }
+    </style>
+
+</head>
+<body>
+    <div id="m">ma</div>
+    <div id="n"></div>
+    <div id="o">om</div>
+    <div>techpile</div>
+</body>
+</html>
+           
