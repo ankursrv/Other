@@ -1,0 +1,142 @@
+.first-name label{
+    position: absolute; 
+    left: 0px;
+    font-size: 16px;
+    transition: all 0.3s; 
+    padding: 5px 10px;
+    pointer-events: none; /*iska use krne pr text ke upar click krne pr work krega ,iska use naa krne pr text ke upar click krne pr kaam nahi krega but input field ke anadar text pe click na krke kahi or click krne pr kaam krta hai.*/
+}
+/* mandatory field using star  */
+.first-name span{
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    display: none;
+    transition: all 0.3s;
+    color: maroon;
+}
+    
+ /* mandatory field using End   */
+ 
+ 
+.first-name .fn{
+    /* background-color: rgba(252, 252, 252, 0.979); */
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.first-name .fn:focus{
+    border: 1px solid rgb(184, 16, 16);
+}
+    
+.first-name .fn:focus ~ span
+{
+display: block;
+top: -11px;
+left: 73px;
+background-color: white;
+padding:0 5px;
+}
+.first-name .ln:focus ~ span{
+    left: 71px;
+}
+.first-name .fn:focus ~ label
+{
+    background-color: white;
+    top: -13px;
+    font-size: 12px;
+    padding: 0px 2px;
+    left: 12px;
+}
+
+
+
+/* Botton Hover fill color slide Left-to-Right Start */
+/* .btn-box {
+    overflow: hidden;
+    display: inline-block;
+} */
+.myBtn{
+    padding: 7px 25px;
+    border: 1px solid orange;
+    border-radius: 50px;
+    background-color: unset;
+    /* position: relative; */
+    /* overflow: hidden; */
+    background: linear-gradient(to right, orange 49.8%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+    
+/* .btn-hover{
+    position: absolute;
+    background-color: orangered;
+    width: -0%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 0.5s;
+
+}
+.btn-box:hover .btn-hover{
+width: 100%;
+} */
+.myBtn:hover{
+    background-position: left bottom;
+}
+
+/* Botton Hover fill color slide Left-to-Right End  */
+
+/* Form input & placeholder color change Start   */
+#myForm .form-control{
+    background: rgb(131 145 165 / 11%);
+    color: rgb(2, 2, 27);
+    font-weight: 600;
+}
+#myForm .form-control::placeholder{
+    color: rgba(131, 145, 165, 0.521);
+    font-weight: 400;
+}
+.bg-color{
+    background: rgb(131 145 165 / 11%);
+}
+.txt-style{
+    /* color: rgb(2, 2, 27);
+    font-weight: 600; */
+}
+
+/* 1ST method  */
+ /* .form-select {
+    -webkit-appearance: menulist-button;
+    color: black;
+    
+  }
+  
+   .form-select:invalid {
+    color: green;
+    
+  } */
+
+  /* 2ND method  */
+  .form-select:invalid{color: gray !important;}
+  .form-select:valid{
+    color: blue;
+    font-weight: 700;
+  }
+  #myForm .form-control{
+    /* color: inheri !important; */
+  }
+
+  /**** 3Rd Method  ****/
+  /* select:invalid {
+    color: gray;
+  }
+  
+  select option:first-child {
+    color: black;
+  } */
