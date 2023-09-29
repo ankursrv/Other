@@ -1,0 +1,51 @@
+.item-group img{
+  /* margin: 20px; */
+  
+}
+
+
+
+.item-group .item{
+  padding: 10px;
+}
+.btn_sty{
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.btn_sty button{
+  background-color: black;
+ 
+ 
+}
+button{
+  position: relative;
+  padding-bottom: 10px;
+  color: rgba(238, 237, 230, 0.795);
+  font-size: 18px;
+  font-weight: bold;
+ padding-left: 0;
+ padding-right: 0;
+}
+button.active, button:hover{
+  color: #D0A65B;
+}
+
+button::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  left: 0%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3px;
+  background-color: #D0A65B;
+ overflow: hidden;
+  transition: all 0.5s;
+}
+button.active:hover::before,button:hover::before{
+width: 100%;
+left: 50%;
+transform: translateX(-50%);
+line-height: 20px;
+
+}

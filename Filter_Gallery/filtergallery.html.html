@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Filter Gallery | isotope</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.1.3-beta1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- link  CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  
+  <main>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="filter-button-group btn_sty">
+          <button data-filter="*" class="active drones100">Drones 100</button>
+          <button data-filter=".metal" class="drones100">Drones 500</button>
+          <button data-filter=".transition"class="drones100">transition</button>
+          <button data-filter=".alkali, .alkaline-earth"class="drones100">alkali & alkaline-earth</button>
+          <button data-filter=":not(.transition)"class="drones100">not transition</button>
+          <button data-filter=".metal:not(.transition)"class="drones100">metal but not transition</button>
+        </div>
+       <div class="item-group">
+        <div class="col-md-4 item metal">
+          <img src="img/gimg-1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4 item transition">
+          <img src="img/gimg-2.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4 item alkali">
+          <img src="img/gimg-3.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4 item metal">
+          <img src="img/gimg-4.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4 item transition">
+          <img src="img/gimg-5.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4 item metal">
+          <img src="img/gimg-6.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4 item transition">
+          <img src="img/gimg-7.jpg" alt="" class="img-fluid">
+        </div>
+       </div>
+      </div>
+    </div>
+   </div>
+  </main>
+  
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  
+   <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="autofilter.js"></script>
+
+<!-- isotope cdn   NOte: is cdn link ko external js file ke thik upar kre nahi ye kaam nahi krega--> 
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
