@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+width: 100%;
+display: grid;
+grid-template-columns: auto auto auto 200px;
+grid-template-rows: 70px 50px 500px 80px;
+grid-template-areas: "header header header header" 
+                      "menu menu menu menu"
+                      "content content content sidebar"
+                      "footer footer footer footer"  ;
+
+}
+#header{
+    background-color: rgb(243, 10, 10);
+    grid-area: header;
+}
+#header span{
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+    margin: 20px 0 20px 20px;
+    height: 100%;
+    display: flex;
+    
+}
+#menu{
+    background-color: rgb(199, 65, 199);
+    grid-area: menu;
+}
+    
+#menu ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#menu a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+    
+#content{
+    grid-area: content;
+}
+#content img{
+    float: left;
+    margin: 10px 15px 10px 10px;
+    
+}
+#content p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 15px 0 0;
+}
+
+#sidebar{
+    text-align: center;
+    background-color: rgb(248, 164, 248);
+    grid-area: sidebar;
+    border-left: 1px solid black;
+}
+#sidebar li{
+    margin-top: 20px;
+}
+
+#footer{
+    background-color: rgb(248, 37, 37);
+    grid-area: footer;
+}
+#footer span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 25px;
+    color: white;
+}
+/* JS DOM set methods se class set ki hai  */
+#header , .xyz{
+    background-color: tan;
+}

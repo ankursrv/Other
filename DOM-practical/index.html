@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Practical</title>
+
+    <!-- jquery Link CDN file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <span mouseover="myfun()" id="btn" style="border: 1px solid black;">Anurag</span>
+        </div>
+        <div id="menu" class="first-list">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <p><img mouseover="change()" src="images/user-1.png" alt="" id="img-change">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Reiciendis voluptates beatae, sint itaque incidunt earum rerum, quas iusto
+                debitis commodi atque, maiores ullam. Est, labore! Itaque aperiam repellat deleniti necessitatibus
+                corrupti similique ipsum accusantium laborum dolore perspiciatis. Quidem unde culpa deserunt quas
+                assumenda at! Quisquam nisi ullam saepe temporibus obcaecati, repellat vero vitae quae unde dolor
+                dolorem pariatur, magnam odio rerum velit? Accusamus exercitationem officia aperiam expedita suscipit
+                repellendus vitae nesciunt quaerat, soluta amet numquam similique sapiente dignissimos ut adipisci
+                dolorem quidem aspernatur quod corporis aliquam rem necessitatibus sunt explicabo! Perspiciatis
+                molestias tempora nulla! Deleniti quo a delectus sit nam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Reiciendis voluptates beatae, sint itaque incidunt earum rerum, quas iusto debitis
+                commodi atque, maiores ullam. Est, labore! Itaque aperiam repellat deleniti necessitatibus corrupti
+                similique ipsum accusantium laborum dolore perspiciatis. Quidem unde culpa deserunt quas assumenda at!
+                Quisquam nisi ullam saepe temporibus obcaecati, repellat vero vitae quae unde dolor dolorem pariatur,
+                magnam odio rerum velit? Accusamus exercitationem officia aperiam expedita suscipit repellendus vitae
+                nesciunt quaerat, soluta amet numquam similique sapiente dignissimos ut adipisci dolorem quidem
+                aspernatur quod corporis aliquam rem necessitatibus sunt explicabo! Perspiciatis molestias tempora
+                nulla! Deleniti quo a delectus sit nam.</p><br>
+            <button onclick="imgChange()">Change-img</button>
+
+            <button onclick="reset()">Reset-img</button>
+
+            <button id="toggle">Toggle button</button>
+
+        </div>
+        <div id="sidebar" class="sidebar">
+            <ul class="list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <span> Footer </span>
+        </div>
+    </div>
+
+
+    <!--------------------------------- JavaScript -->
+
+    <script>
+
+        /////////////////////// Using DOM Get Methods
+
+        // var btn ;       //Using innerText
+
+        btn = document.getElementById("btn").innerText;
+        console.log(btn);
+
+        btn = document.getElementById("sidebar").innerText;
+        console.log(btn);
+
+        //Using innerHTML
+
+        // btn = document.getElementById("header").innerHTML;
+        // console.log(btn);
+
+        // btn = document.getElementById("menu").innerHTML;
+        // console.log(btn);
+
+        //Using getAttribute
+        function imgChange() {
+            document.getElementById("img-change").src = 'images/category.jpg';
+        }
+
+        function reset() {
+            document.getElementById("img-change").src = 'images/user-1.png';
+        }
+
+        //    var element;
+        //    element = document.getElementsByTagName("ul");
+        //    console.log(element);
+
+        // Attribute ko get krna 
+
+        var element;
+        //    element = document.getElementById("menu").getAttribute("class");
+        // element = document.getElementById("header").innerHTML;
+        //    element = document.getElementById("btn").getAttribute("style");
+        //    element = document.getElementById("btn").getAttribute("mouseover");
+        // element = document.getElementById("menu"). attributes[1].value;
+        //    console.log(element);
+
+
+        /////////////////////// Using DOM Set Methods
+
+        // element = document.getElementById("btn").innerHTML="<h3>Hello World</h3>";
+
+
+        //    element = document.getElementsByTagName("p").innerText ="welcome to ankur";
+
+        //         element = document.getElementById("header").setAttribute=("class","xyz");
+
+        //         element = document.getElementById("btn").removeAttribute("style");
+        // console.log(element);
+
+        /////////////////////// Using DOM CSS style methods
+        //    document.getElementById("header").addEventListener("click",abc);
+        //    function abc (){
+        //     document.getElementById("header").style.background = "green";
+        //    };
+
+        //    document.getElementById("header").addEventListener("mouseenter",function(){
+        //     document.getElementById("header").style.background = "orange";
+        //    });
+
+        //    document.getElementById("header").addEventListener("dblclick", function(){
+        //     document.getElementById("header").style.border = "5px solid blue"
+        //    });
+
+        //    document.getElementById("menu").addEventListener("mouseenter",function(){
+        //     document.getElementById("menu").style.color ="blue";
+        //    });
+
+
+
+        /////////////////////// jQuery Event
+
+
+        $(document).ready(function () {
+
+            // 1st methods
+            // $("#footer").mouseover(function(){
+            //     $("#footer").css("background","blue");
+            //     $("#footer").css("transition","ease 0.5s");
+            // });
+
+            // $("#footer").mouseleave(function(){
+            //     $("#footer").css("background","");
+            // });
+
+            // $("#footer").click(function(){
+            //     $(this).hide();
+            // });
+
+            // $("#menu").mouseenter(function(){
+            //     $("#menu a").css("color", "orange");
+            // });
+            // $("#menu").mouseleave(function(){
+            //     $("#menu a").css("color", "");
+            // });
+
+
+            /////////////////////// Show ,Hide and Toggle isme 2 parameter bhi pass hote hai jiski help se hm in methods ko smoothly show and hide kra skte hai ,2nd parameter me hm function define kr skte hai (show,hide hone ke baad function hmara call ho) Methods
+            //   $("#img-change").mouseenter(function(){
+            //     $(this).hide(2000);
+            //   });
+
+            //   $("#img-change").mouseenter(function(){
+            //     $(this).hide(2000,function(){
+            //         alert("Hide Event");
+            //     });
+            //   });
+
+            //   $("#img-change").mouseleave(function(){
+            //     $(this).show(1000);
+            //   });
+
+            //   $("#toggle").click(function(){
+            //     $("#img-change").toggle();
+            //   });
+
+            /////////////////////// fadeIn and fadeOut
+
+            // $("#footer").click(function(){
+            //     $("#img-change").fadeIn();
+            // });
+
+            // $("#img-change").mouseenter(function(){
+            //     $("#img-change").fadeOut();
+            // });
+
+            // $("#footer").click(function(){
+            //     $("#img-change").fadeIn(4000,function(){
+            //         $("#content").css("background","skyblue");
+            //     });
+            // });
+
+            // $("#img-change").mouseenter(function(){
+            //     $("#img-change").fadeOut(1000,function(){
+            //         $("#header").css("background","orange");
+            //     });
+            // });
+
+            /////////////////////// fadeToggle and fadeTo(speed, opacity, callback function) 3 parameeter pass hota hai fadeTo me.
+
+            //  $("#content").mouseenter(function(){
+            //     $("#img-change").fadeToggle();
+            //  });
+
+            // $("#content").mouseenter(function(){
+            //     $("#img-change").fadeToggle(000, function(){
+            //         $("#footer").css("background","yellow");
+
+            //     });
+            // });
+
+            // $("#content").mouseenter(function(){
+            //     $("#img-change").fadeTo(1000, 0.5, function(){
+            //         $("#footer").css("background","black");
+
+            //     });
+            // });
+
+            /////////////////////// CSS ki multiple value ko lgana ho to ....
+
+            // $("#footer").click(function () {
+            //     $(this).css({
+            //         "background": "black",
+            //         "font-size": "50px",
+            //         "border": "10px solid white",
+            //         "color": "yellow"
+            //     });
+
+            //     $("#content").css({"background":"lightgreen", "color": "red"});
+            // });
+
+            /////////////////////// slideUP , slideDown, slideToggle---> ye show or hide ki trha kaam krta hai but isme animation slide ke sath hota hai.
+
+            $("#img-change").click(function(){
+                $(this).slideUp();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
