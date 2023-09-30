@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+       header{
+           background-color: indianred;
+           width: 100%;
+           overflow: auto;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           /* position: fixed; */
+           
+       }
+       
+       ul{
+           margin: 0px;
+           padding: 0px;
+           /* float: left; */
+           display: flex;
+           justify-content: flex-end;
+           flex-direction: row;
+           list-style: none;
+           
+           
+       }
+       /* li images */
+       li:first-child{
+        list-style-image: url(images/house.svg);
+       color: white;
+       }
+       
+    
+       
+       .nav-logo{
+           margin: 0px;
+           float: left;
+           padding-left: 40px;
+           
+       }
+
+      a{
+          text-decoration: none;
+          line-height: 25px;
+          padding-right: 40px;
+          font-size: 20px;
+      }
+      a:hover{
+          color: white;
+          transition: all ease 0.5s;
+          text-decoration: underline;
+        }
+         li:first-child{
+             color: white;
+         } 
+   
+      section{
+          background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Desert.jpg);
+          /* height: 930px; */
+          height: calc(100vh - 100px);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-attachment: fixed;
+          overflow: auto;
+      }
+      #banner-heading{
+          text-align: center;
+          color: white;
+          font-size: 25px;
+          letter-spacing: 3px;
+          margin-top: 0;
+      }
+      .banner-text p{
+          color: white;
+          text-align: center;
+          padding-bottom: 10px;
+      }
+      .banner-text{
+          /* border: 1px solid red; */
+          transform: translateY(200px);
+      }
+      .banner-text a{
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bolder;
+          padding-right: 0;
+          padding: 8px 50px;
+          background-color: rgba(251, 251, 251, 0.416);
+          margin-left: 43%;
+          color: black;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          animation-name: anchor;
+          animation-duration: 2s;
+          animation-iteration-count: infinite ;
+          animation-direction: alternate;
+      }
+      @media screen and (max-width: 1000px){
+          .banner-text a{
+              margin-left: 40%;
+          }
+      }
+      @media screen and (max-width: 900px){
+          .banner-text a{
+              margin-left: 39%;
+          }
+      }
+      @media screen and (max-width: 400px){
+          .banner-text a{
+              margin-left: 23%;
+          }
+      }
+      @keyframes anchor{
+          0%{
+              background-color: #ffbb33;
+          }
+          25%{
+            background-color: #00C851;
+          }
+          50%{
+            background-color: #0099cc;
+          }
+          75%{
+            background-color: #aa66cc;
+          }
+          100%{
+            background-color: #2BBBAD;
+          }
+      }
+       .banner-text a:hover{
+           color: white;
+           background-color: #CC0000;
+           animation-play-state: paused;
+       }
+       /* @media only screen and (min-width: 300px){
+        .banner-text a{
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bolder;
+          padding-right: 0;
+          padding: 5px 50px;
+          background-color: rgba(251, 251, 251, 0.416);
+          margin-left: 32%;
+          
+          color: rgb(130, 25, 211);
+      }
+      .nav-logo{
+           margin: 0px;
+           float: left;
+           padding-left: 20px;
+        
+       }
+       a{
+          text-decoration: none;
+          line-height: 25px;
+          padding-right: 20px;
+          font-size: 25px;
+          color: white; 
+      }
+       } */
+     
+            
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h2 class="nav-logo">Logo</h2>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">service</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="banner-text">
+            <h2 id="banner-heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Voluptatem, deleniti.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab ea assumenda sequi aperiam. <br>Eaque reiciendis quo illum suscipit vero.</p>
+            <a href="#">Hello</a>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
