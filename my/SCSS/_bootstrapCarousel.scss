@@ -1,0 +1,22 @@
+.myCarousel {
+    .carousel-item::after{content: ''; position: absolute; width: 100%; height: 100%; background-color: #212529; opacity: 0.5; top: 0; bottom: 0; left: 0; right: 0;}
+
+    .carousel-caption{bottom: inherit; top: 50%; transform: translateY(-50%); text-align: start; z-index: 5;}
+
+    .carousel-indicators{
+        justify-content: start;
+        button{width: 10px; transition: ease-in-out 0.5s;}
+        .active{width: 30px;}
+    }
+     h1{font-size: 72px;}
+     p{font-size: 20px;}
+
+     .img__fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
+  @media screen and (max-width:768px){
+    .myCarousel h1{font-size: 32px;}
+    .myCarousel p{font-size: 16px;}
+  }

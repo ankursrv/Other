@@ -1,0 +1,106 @@
+.bg-img-3 {
+    background-image: url("../testimonial_img/bg6.jpg");
+    position: relative;
+    /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url("../testimonial_img/bg5overlay.png");
+        background-color: #e8e8e8;
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  }
+  
+  
+  .bannerOverlayContent {
+    padding: 100px;
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+    h3 {
+        font-size: 3vw;
+        font-weight: 800;
+      }
+      h4 {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      a {
+        background: orangered;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 20px 40px;
+        text-transform: uppercase;
+      }
+    .card {
+        z-index: 2;
+        overflow: hidden;
+        border: none;
+        border-radius: unset;
+      }
+      .service-right-sec {
+        background-color: #f1f1f1;
+        padding: 30px;
+      }
+      .service-icon-box {
+        fill: orangered;
+      }
+  }
+//   .bannerOverlayContent .card {
+//     z-index: 2;
+//     overflow: hidden;
+//     border: none;
+//     border-radius: unset;
+//   }
+//   .bannerOverlayContent h3 {
+//     font-size: 3vw;
+//     font-weight: 800;
+//   }
+//   .bannerOverlayContent p {
+//     font-size: 16px;
+//     line-height: 1.7;
+//   }
+//   .bannerOverlayContent a {
+//     background: orangered;
+//     color: #fff;
+//     font-weight: 500;
+//     font-size: 18px;
+//     padding: 20px 40px;
+//     text-transform: uppercase;
+//   }
+//   .bannerOverlayContent .service-right-sec {
+//     background-color: #f1f1f1;
+//     padding: 30px;
+//   }
+//   .bannerOverlayContent .service-icon-box {
+//     fill: orangered;
+//   }
+//   .bannerOverlayContent h4 {
+//     font-size: 30px;
+//     font-weight: 700;
+//   }
+  
+  @media screen and (max-width: 768px) {
+    .bannerOverlayContent {
+      padding: 50px 0px;
+    }
+    .bannerOverlayContent h4 {
+      font-size: 1.25rem;
+    }
+    .bannerOverlayContent .card-body {
+      padding: 18px;
+    }
+    .bannerOverlayContent .service-right-sec {
+      padding: 28px;
+    }
+  }

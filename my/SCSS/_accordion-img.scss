@@ -1,0 +1,17 @@
+
+.about h2{font-weight: 700; color: #212529; font-size: 3vw;}
+.aboutimgbox1 img{width: 100%;}
+.aboutimgbox2{height: calc(100% - 30px);}
+.aboutimgbox2 .innerbox1{height: 70%;}
+.aboutimgbox2 .innerbox2{height: 30%;}
+.aboutimgbox2 img{width: 100%;}
+
+
+.aboutAccordion .accordion-header .accordion-button{font-size: 18px; font-weight: bold; background-color: orangered; color: white; padding: 25px 20px 25px 20px; border: 3px solid orangered;}
+.aboutAccordion .accordion-header .accordion-button span{display: inline-block; margin-left: auto;}
+.accordion-button:not(.collapsed) span{transform: rotate(90deg); fill: white;}
+.aboutAccordion .accordion-header .accordion-button::after{display: none;}
+.aboutAccordion .accordion-item{margin-top: 20px;}
+.aboutAccordion .accordion-item .accordion-body{border: 3px solid rgba(0,0,0,.125); border-top: none;}
+.aboutAccordion .accordion-header .collapsed{background-color: white; color: black; border: 3px solid rgba(0,0,0,.125);}
+.aboutAccordion .accordion-header .accordion-button:focus{box-shadow: none;}

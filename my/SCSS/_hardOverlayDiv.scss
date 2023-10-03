@@ -1,0 +1,68 @@
+//  Second Component 
+ 
+ .outerContainer{width: 50%; background: rgb(9, 9, 54); min-height: 400px; position: relative;}
+ .outerwrapper
+ { 
+    position: absolute; left: 10%; top: 8%; z-index: 5;
+
+    img{width: 600px; height: 400px;}
+}
+ .innerWrapper1
+ {
+    left: 10%; z-index: 6;
+
+    img{width: 300px; height: 275px; position: absolute; right: -60px; top: 65%; box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;}
+}
+
+ .component2 .rightsec 
+{
+    h3{font-size: 68px; font-weight: 600; margin-bottom: 0;}
+    p{font-size: 18px;}
+} 
+
+ .component2 .rightsec 
+ .contactusBtn{background: #3776eb;
+   padding: 14px 42px;
+   color: #fff;
+   font-weight: 600;
+   font-size: 20px;
+   border-radius: 8px;}
+   @media screen and (max-width:767px) {
+     .outerContainer{width: 65%; min-height: 200px;}
+     .outerwrapper img{width: 275px; height: 200px;}
+           .innerWrapper1 img {
+             width: 200px;
+             height: 175px;
+             right: -40px;
+             top: 65%;
+           }
+   }
+   @media screen and (max-width:1199px){
+     .component2 .rightsec h3{font-size: 48px;}
+     .outerwrapper img {
+       width: 40vw;
+       
+   }
+       .innerWrapper1 img {
+         width: 25vw;
+         
+         right: -50px;
+       }
+       .outerContainer{min-height: 355px; width: 30vw;}
+   }
+
+//  Third Component Start 
+.healthCare{
+    margin-top: 20%;
+
+    .rightsec {
+        .content{padding: 0 100px 0 100px;}
+        h3{font-size: 68px;}
+    }
+}
+
+.bg-gray{background: rgba(128, 128, 128, 0.3);}
+@media screen and (max-width:768px) {
+ .healthCare .rightsec .content{padding: 0 50px 0 50px;;}
+ .healthCare .rightsec h3{font-size: 38px;}
+}
